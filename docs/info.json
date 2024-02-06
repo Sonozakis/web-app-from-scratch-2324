@@ -1,14 +1,15 @@
 {
     "name": "Klaudia",
-    "avatar": "URL",
-    "dateOfBirth": {
-        "year": 1999,
-        "month": 12,
-        "day": 2
-    },
+    "age": "24",
+    "geboortedatum" : "1999-12-02",
+    "job": "Kruidvat verkoopmedewerker",
+    "study": "CMD",
     "city": "Den Bosch",
-    "favoritePets": [
-        "Cats", "More cats"
-    ],
-    "openForJobProposals": true
-}
+    "hobbies": "Gamen, lezen, muziek luisteren, anime kijken",
+    "gamen": "true",
+    "favourite-films": ["The End of Evangelion", "Kill Bill", "He Loves Me, He Loves Me Not", "Perfect Blue"],
+    "avatar": {
+      "url": "URL",
+      "alternativeText": "Tekst"
+    }
+  }
