@@ -1,0 +1,14 @@
+{
+    "name": "Klaudia",
+    "avatar": "URL",
+    "dateOfBirth": {
+        "year": 1999,
+        "month": 12,
+        "day": 2
+    },
+    "city": "Den Bosch",
+    "favoritePets": [
+        "Cats", "More cats"
+    ],
+    "openForJobProposals": true
+}
