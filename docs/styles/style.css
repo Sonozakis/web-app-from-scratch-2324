@@ -2,18 +2,18 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-    box-sizing:border-box; 
-    margin:0;
-    padding:0;
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+  
+button:not([disabled]) {
+  cursor: pointer;
   }
   
-  button:not([disabled]) {
-    cursor:pointer;
-  }
-  
-  img {
-    max-width:100%;
-  }
+img {
+  max-width: 100%;
+}
 
 
 
@@ -21,19 +21,56 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-    --background: #fff;
-    --text-color: #000; 
+  --background: hsl(0, 0%, 10%);
+  --text-color: hsl(0, 0%, 83%); 
 
-    --title-font: 'arial';
-    --text-font: 'arial';
+  --title-font: 'arial';
+  --text-font: 'M PLUS 1 Code', monospace;
 }
 
 
 
 body {
-    background-color: var(--background);
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    display: flex;
+  background-color: var(--background);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+
+
+/**********/
+/* HEADER */
+/**********/
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/********/
+/* MAIN */
+/********/
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main ul {
+  display: flex;
+  flex-direction: row;
+}
+
+main ul li {
+  list-style: none;
 }
