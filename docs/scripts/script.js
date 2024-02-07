@@ -1,4 +1,4 @@
-const nameFile = document.querySelector("p");
+const nameFile = document.querySelector("");
 const jsonFile = "https://sonozakis.github.io/web-app-from-scratch-2324/docs/info.json";
 
   fetch(jsonFile) 

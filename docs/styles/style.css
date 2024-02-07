@@ -25,7 +25,7 @@ img {
   --text-color: hsl(0, 0%, 83%); 
 
   --title-font: 'arial';
-  --text-font: 'M PLUS 1 Code', monospace;
+  --text-font: 'arial';
 }
 
 
@@ -37,40 +37,8 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: var(--text-color);
   font-family: var(--text-font);
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-
-
-/**********/
-/* HEADER */
-/**********/
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-/********/
-/* MAIN */
-/********/
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-main ul {
-  display: flex;
-  flex-direction: row;
-}
-
-main ul li {
-  list-style: none;
+  margin: 2em;
 }
