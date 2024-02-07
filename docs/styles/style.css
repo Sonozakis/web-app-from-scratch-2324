@@ -17,6 +17,19 @@ img {
 
 
 
+/*********/
+/* FONTS */
+/*********/
+@font-face {
+  font-family: 'collingar';
+  src: url('../fonts/Collingar.woff2') format('woff2'),
+        url('../fonts/Collingar.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -24,7 +37,7 @@ img {
   --background: hsl(0, 0%, 10%);
   --text-color: hsl(0, 0%, 83%); 
 
-  --title-font: 'arial';
+  --title-font: 'collingar', serif;;
   --text-font: 'arial';
 }
 
@@ -32,7 +45,6 @@ img {
 
 body {
   background-color: var(--background);
-  height: 100vh;
   width: 100vw;
   overflow-x: hidden;
   display: flex;
@@ -40,5 +52,76 @@ body {
   justify-content: space-between;
   color: var(--text-color);
   font-family: var(--text-font);
+}
+
+h1 {
+  position: relative;
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(---color);
+}
+
+
+
+/**********/
+/* HEADER */
+/**********/
+header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--background);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.01em solid white;
+}
+
+header ul li {
+  list-style: none;
   margin: 2em;
+}
+
+
+
+/********/
+/* MAIN */
+/********/
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 2;
+  gap: 2em;
+  max-height: 40%;
+  margin: 2em 1em;
+}
+
+img {
+  width: 10em;
+}
+
+main p {
+  overflow-x: scroll;
+  background-color: var(--background);
+  border: 0.01em solid white;
+  padding: 0.5em 1em;
+  filter: drop-shadow(0.7em 0.6em 0 #fff);
+}
+
+/**********/
+/* FOOTER */
+/**********/
+footer {
+  text-align: center;
 }
