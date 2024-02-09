@@ -21,20 +21,12 @@ img {
 /* FONTS */
 /*********/
 @font-face {
-  font-family: 'collingar';
-  src: url('../fonts/Collingar.woff2') format('woff2'),
-        url('../fonts/Collingar.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'neue';
-  src: url('../fonts/NeuethingVariableTest-SemiBoldExtraExpanded-BF64bf225f843cf.otf');
+  src: url('../fonts/neue.woff2') format('woff2'),
+        url('../fonts/neue.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 
 
 
@@ -45,7 +37,7 @@ img {
   --main: #e5e5e5;
   --accent: #283ba8; 
 
-  --title-font: 'neue', serif;
+  --title-font: 'neue', sans-serif; /*font stacks niet vergeten!!!*/
   --text-font: 'arial';
 }
 
@@ -54,6 +46,7 @@ img {
 /***********/
 /* GENERAL */
 /***********/
+/*Noise filter*/
 /* body::before {
   content: "";
   position: fixed;

@@ -25,6 +25,7 @@ To do:
 - Mobiele layout compleet af
 - Tekst schrijven
 - Beginnen aan middel en grote scherm versies
+- API vinden of eigen JSON maken voor Evangelion quotes en deze koppelen
 
 
 ## Dag 5 - 10 februari 2024
