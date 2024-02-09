@@ -28,16 +28,24 @@ img {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'neue';
+  src: url('../fonts/NeuethingVariableTest-SemiBoldExtraExpanded-BF64bf225f843cf.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-  --background: hsl(0, 0%, 10%);
-  --text-color: hsl(0, 0%, 83%); 
+  --main: #e5e5e5;
+  --accent: #283ba8; 
 
-  --title-font: 'collingar', serif;
+  --title-font: 'neue', serif;
   --text-font: 'arial';
 }
 
@@ -46,14 +54,28 @@ img {
 /***********/
 /* GENERAL */
 /***********/
+/* body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg'); 
+  pointer-events: none; 
+  z-index: 99; 
+  opacity: 0.4;
+  filter: contrast(-170%) brightness(-200%);  
+} */
+
 body {
-  background-color: var(--background);
+  background-color: var(--main);
   width: 100vw;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: var(--text-color);
+  color: var(--accent);
   font-family: var(--text-font);
 }
 
@@ -62,12 +84,47 @@ h1 {
   font-family: var(--title-font);
   text-transform: uppercase;
   text-align: center;
-  margin-top: 1.5em;
+  font-size: 6.5vw;
+}
+
+h2 {
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  font-size: 5vw;
 }
 
 a {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  color: var(--accent);
   text-decoration: none;
-  color: var(---color);
+  font-size: 4vw;
+  text-transform: lowercase;
+}
+
+/* Hover animation underline*/
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.05em;
+  background-color: var(--accent);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  bottom: 0;
+  left: 0;
+}
+
+a::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+a:hover::after,
+a:focus::after{
+  transform: translate3d(0, 0, 0);
 }
 
 
@@ -78,15 +135,39 @@ a {
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--background);
+  background-color: var(--main);
+  background-image: url("../images/rei2.png");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
 }
 
-header ul {
+header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.01em var(--accent) solid;
+  background-color: var(--main);
+  border-top: 2em var(--accent) solid;
+  padding: 1em 0em;
+  margin: 25em 1.5em 0 1.5em;
+}
+
+header section::after {
+  content: "×";
+  color: var(--main);
+  border: 0.01em var(--main) solid;
+  position: absolute;
+  font-size: 1em;
+  top: 25.2em;
+  right: 1.8em;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+}
+
+header section ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -94,9 +175,8 @@ header ul {
   margin-top: 1em;
 }
 
-header ul li {
+header section ul li {
   list-style: none;
-
 }
 
 
@@ -107,43 +187,43 @@ header ul li {
 main {
   display: flex;
   flex-direction: column;
-  gap: 2em;
-  max-height: 40%;
-  margin: 2em 1em;
+  justify-content: center;
+  align-items: center;
 }
 
 main article {
   display: flex;
-  flex-direction: row;
-  flex: 1 2;
-  gap: 2em;
-}
-
-main article div {
-  display: flex;
   flex-direction: column;
+  gap: 0.2em;
+  border: 0.01em var(--accent) solid;
+  background-color: var(--main);
+  border-top: 2em var(--accent) solid;
+  width: 90vw;
+  height: 40vh;
+  padding: 1em;
+  position: absolute;
+  top: 45%;
+  opacity: 0;
+  pointer-events: none; 
 }
 
-img {
-  width: 10em;
+.show {
+  opacity: 1;
 }
 
-main article div {
-  background-color: var(--background);
-  border: 0.01em solid white;
-  padding: 1em 1em;
-  filter: drop-shadow(0.7em 0.6em 0 #fff);
+main article::after {
+  content: "×";
+  color: var(--main);
+  border: 0.01em var(--main) solid;
+  position: absolute;
+  font-size: 1em;
+  top: -1.8em;
+  right: 0.2em;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
 }
 
-main p {
-  overflow-x: scroll;
-}
-
-
-
-/**********/
-/* FOOTER */
-/**********/
-footer {
-  text-align: center;
+p {
+  overflow-y: auto;
+  padding-right: 1em;
 }

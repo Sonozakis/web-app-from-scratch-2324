@@ -5,9 +5,9 @@
     "job": "Kruidvat verkoopmedewerker",
     "study": "CMD",
     "city": "Den Bosch",
-    "hobbies": "Gamen, lezen, muziek luisteren, anime kijken",
+    "hobbies": ["Gamen, lezen, muziek luisteren, anime kijken"],
     "gamen": "true",
-    "favourite-films": ["The End of Evangelion", "Kill Bill", "He Loves Me, He Loves Me Not", "Perfect Blue"],
+    "favourite-films": ["The End of Evangelion", "Kill Bill", "He Loves Me, He Loves Me Not", "Perfect Blue", "Coraline"],
     "avatar": {
       "url": "URL",
       "alternativeText": "Tekst"
