@@ -36,9 +36,9 @@ document.addEventListener('click', function(event) {
     // If user clicks link
     event.preventDefault();
     about.classList.add('show'); // Adds the 'show' class
-  } else if (event.target = getComputedStyle(about, '::after')) {
-    // If user clicks on the close button 
-    about.classList.remove('show'); // Removes the 'show' class
+  } else if (event.target.nodeName === 'BUTTON') {
+    // If user clicks on a button
+    about.classList.remove('show'); // Removes the 'show' class from about
   }
 });
 
@@ -46,7 +46,7 @@ document.addEventListener('click', function(event) {
   if (event.target === showFavs) {
     event.preventDefault();
     favs.classList.add('show'); 
-  } else if (event.target = getComputedStyle(favs, '::after')) {
+  } else if (event.target.nodeName === 'BUTTON') {
     favs.classList.remove('show'); 
   }
 });
@@ -55,7 +55,7 @@ document.addEventListener('click', function(event) {
   if (event.target === showSources) {
     event.preventDefault();
     sources.classList.add('show'); 
-  } else if (event.target = getComputedStyle(sources, '::after')) {
+  } else if (event.target.nodeName === 'BUTTON') {
     sources.classList.remove('show'); 
   }
 });

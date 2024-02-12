@@ -32,18 +32,39 @@ Vandaag heb ik vooral kleine dingetjes goed werkend gemaakt die ik in eerste ins
 <img src="./readme-images/theculprit.png" alt="Mijn leed.">
 
 ## Dag 5 - 12 februari 2024
-Helaas heb ik in het weekend vrij weinig kunnen doen door werk, dus dit was het eerst volgende moment waarop ik aan het project kon zitten. 
+Helaas heb ik in het weekend vrij weinig kunnen doen door werk, dus dit was het eerst volgende moment waarop ik aan het project kon zitten. Vandaag heb ik mijn app/website volledig responsief gemaakt. 
+
+<img src="./readme-images/smallscreen.png" alt="De kleine scherm versie.">
+<img src="./readme-images/bigscreen.png" alt="De grote scherm versie.">
+
+Vervolgens merkte ik ook dat ik de "x"-button beter ook een echte button kon maken, dan een ::after element. Dit heb ik gedaan, wat betekende dat ik ook mijn JavaScript moest aanpassen.
+<img src="./readme-images/htmlbutton.png" alt="De button in de HTML.">
+<img src="./readme-images/javascriptbutton.png" alt="De nieuwe JavaScript voor de button.">
+
+Ik heb gekeken naar een noise filter die ik over de gehele website kon plaatsen voor een meer "retro" look, maar uiteindelijk vond ik dit toch minder leuk dan ik dacht en heb ik het weggehaald. 
+<img src="./readme-images/filtercode.png" alt="Mijn code voor de noise filter.">
+<img src="./readme-images/filtereffect.png" alt="Screenshot van hoe de filter eruit ziet.">
+
+
+Als laatste heb ik ook mijn JSON geupdated met de informatie die de docenten nodig hadden voor hun website. 
+<img src="./readme-images/JSON-update1.png" alt="Toegevoegde informatie binnen de JSON.">
+
+## Dag 6 - 13 februari 2024
+
 
 gas erop klaudia aub kom op
 
-To do:
+To do website:
 - Animaties microinteracties mooi maken
 - Tekst schrijven
 - Carrousel voor favs, misschien ook laten draaien
-- Easter egg toevoegen?
-- API vinden of eigen JSON maken voor Evangelion quotes en deze koppelen of voor anime enzo?
+- Anime API koppelen
+
+To do algemeen:
 - UI stack? -> HELP?
 - Tekst schrijven voor team readme
+- Foto's schetsen toevoegen
+- Breakdown schets iPad
 
 
 

@@ -46,21 +46,6 @@ img {
 /***********/
 /* GENERAL */
 /***********/
-/*Noise filter*/
-/* body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('https://grainy-gradients.vercel.app/noise.svg'); 
-  pointer-events: none; 
-  z-index: 99; 
-  opacity: 0.4;
-  filter: contrast(-170%) brightness(-200%);  
-} */
-
 body {
   background-color: var(--main);
   width: 100vw;
@@ -71,6 +56,18 @@ body {
   color: var(--accent);
   font-family: var(--text-font);
   position: relative;
+}
+
+button {
+  color: var(--main);
+  background-color: var(--accent);
+  border: 0.01em var(--main) solid;
+  top: -1.85em;
+  right: 0.5vw;
+  font-size: 1em;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  position: absolute;
 }
 
 h1 {
@@ -155,18 +152,6 @@ header section {
   position: relative;
 }
 
-header section::after {
-  content: "×";
-  color: var(--main);
-  border: 0.01em var(--main) solid;
-  top: -1.8em;
-  right: 0.5vw;
-  font-size: 1em;
-  padding: 0.2em 0.5em;
-  cursor: pointer;
-  position: absolute;
-}
-
 header section ul {
   display: flex;
   flex-direction: row;
@@ -214,18 +199,6 @@ main article {
   pointer-events: all;
 }
 
-main article::after {
-  content: "×";
-  color: var(--main);
-  border: 0.01em var(--main) solid;
-  position: absolute;
-  font-size: 1em;
-  top: -1.8em;
-  right: 0.2em;
-  padding: 0.2em 0.5em;
-  cursor: pointer;
-}
-
 p {
   overflow-y: auto;
   padding-right: 1em;
@@ -250,13 +223,6 @@ p {
     font-size: 1.2em;
   }
 
-  header section::after, main article::after {
-    right: 0.1em;
-    font-size: 1.1em;
-    padding: 0.18em 0.5em;
-    top: -1.7em;
-  }
-
   main article {
     height: 35vh;
     width: 90vw;
@@ -271,6 +237,10 @@ p {
   main article {
     height: 18em;
     width: 30em;
+  }
+
+  button {
+    right: 0.1em;
   }
 }
 
@@ -287,5 +257,9 @@ p {
   main article {
 
     transform: translateY(2em);
+  }
+
+  button {
+    right: 0.1em;
   }
 }
