@@ -159,7 +159,7 @@ header section::after {
   content: "×";
   color: var(--main);
   border: 0.01em var(--main) solid;
-  top: -3.3vh;
+  top: -1.8em;
   right: 0.5vw;
   font-size: 1em;
   padding: 0.2em 0.5em;
@@ -251,10 +251,10 @@ p {
   }
 
   header section::after, main article::after {
-    top: -3.3vh;
     right: 0.1em;
     font-size: 1.1em;
     padding: 0.18em 0.5em;
+    top: -1.7em;
   }
 
   main article {
@@ -276,5 +276,9 @@ p {
 @media (min-width: 56em) {
   header {
     background-size: contain;
+  }
+
+  header section {
+    transform: translateY(2em);
   }
 }
