@@ -259,6 +259,7 @@ p {
 
   main article {
     height: 35vh;
+    width: 90vw;
   }
 }
 
@@ -269,6 +270,7 @@ p {
 
   main article {
     height: 18em;
+    width: 30em;
   }
 }
 
@@ -279,6 +281,11 @@ p {
   }
 
   header section {
+    transform: translateY(2em);
+  }
+
+  main article {
+
     transform: translateY(2em);
   }
 }

@@ -37,13 +37,13 @@ Helaas heb ik in het weekend vrij weinig kunnen doen door werk, dus dit was het 
 gas erop klaudia aub kom op
 
 To do:
-- Middel en grote versies af
 - Animaties microinteracties mooi maken
 - Tekst schrijven
 - Carrousel voor favs, misschien ook laten draaien
 - Easter egg toevoegen?
 - API vinden of eigen JSON maken voor Evangelion quotes en deze koppelen of voor anime enzo?
 - UI stack? -> HELP?
+- Tekst schrijven voor team readme
 
 
 
