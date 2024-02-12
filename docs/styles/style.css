@@ -79,6 +79,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 6.5vw;
+  margin: 0 0.25em
 }
 
 h2 {
@@ -228,4 +229,52 @@ main article::after {
 p {
   overflow-y: auto;
   padding-right: 1em;
+}
+
+
+
+/******************/
+/* RESPONSIVENESS */
+/******************/
+/* Middel schermen */
+@media (min-width: 33em) {
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+
+  a {
+    font-size: 1.2em;
+  }
+
+  header section::after, main article::after {
+    top: -3.3vh;
+    right: 0.1em;
+    font-size: 1.1em;
+    padding: 0.18em 0.5em;
+  }
+
+  main article {
+    height: 35vh;
+  }
+}
+
+@media (min-width: 41em) {
+  header section {
+    padding: 1em 1.2em;
+  }
+
+  main article {
+    height: 18em;
+  }
+}
+
+/* Groot scherm */
+@media (min-width: 56em) {
+  header {
+    background-size: contain;
+  }
 }
