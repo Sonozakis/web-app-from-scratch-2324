@@ -37,8 +37,8 @@ img {
   --main: #e5e5e5;
   --accent: #283ba8; 
 
-  --title-font: 'neue', sans-serif; /*font stacks niet vergeten!!!*/
-  --text-font: 'arial';
+  --title-font: 'neue', Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+  --text-font: 'arial', Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif; 
 }
 
 
@@ -68,6 +68,18 @@ button {
   padding: 0.2em 0.5em;
   cursor: pointer;
   position: absolute;
+  transition: 0.3s;
+}
+
+button:hover, button:active  {
+  color: var(--accent);
+  background-color: var(--main);
+  border: 0.01em var(--accent) solid;
+  transition: 0.3s;
+}
+
+button:active {
+  transform: scale(90%);
 }
 
 h1 {
@@ -83,6 +95,7 @@ h2 {
   font-family: var(--title-font);
   text-transform: uppercase;
   font-size: 5vw;
+  padding: 0.5em 0 0 0.5em;
 }
 
 a {
@@ -117,6 +130,17 @@ a::after {
 a:hover::after,
 a:focus::after{
   transform: translate3d(0, 0, 0);
+}
+
+p br {
+  margin-bottom: 0.5em;
+}
+
+p a {
+  font-size: 1em;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -179,14 +203,13 @@ main {
 
 main article {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.2em;
   border: 0.01em var(--accent) solid;
   background-color: var(--main);
   border-top: 2em var(--accent) solid;
   margin: 0em 1em;
   height: 40vh;
-  padding: 1em;
   position: absolute;
   top: 15%;
   opacity: 0;
@@ -194,14 +217,34 @@ main article {
   z-index: 2;
 }
 
-.show {
-  opacity: 1;
-  pointer-events: all;
+main article div {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  flex: 2;
+}
+
+main article img {
+  flex: 1; 
+  max-width: 90%; 
+  height: 90%; 
+  align-self: flex-end;
 }
 
 p {
   overflow-y: auto;
-  padding-right: 1em;
+  padding: 0 1em 1em 1em;
+}
+
+
+
+/***********/
+/* CLASSES */
+/***********/
+/* Class for articles to make them show and be clickable */
+.show {
+  opacity: 1;
+  pointer-events: all;
 }
 
 
@@ -209,7 +252,7 @@ p {
 /******************/
 /* RESPONSIVENESS */
 /******************/
-/* Middel schermen */
+/* Middle screens */
 @media (min-width: 33em) {
   h1 {
     font-size: 2em;
@@ -244,7 +287,7 @@ p {
   }
 }
 
-/* Groot scherm */
+/* Big screens */
 @media (min-width: 56em) {
   header {
     background-size: contain;
