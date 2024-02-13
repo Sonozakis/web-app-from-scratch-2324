@@ -57,22 +57,25 @@ Als laatste heb ik ook mijn JSON geupdated met de informatie die de docenten nod
 <img src="./readme-images/JSON-update1.png" alt="Toegevoegde informatie binnen de JSON.">
 
 ### Dag 6 - 13 februari 2024
+op school:
+- scrollbar
+- sources erin
+- responsiveness sources en about
+
+thuis:
+- de rest
+
+
 - Favs erin zetten
     - Api connecten
     - Carrousel per genre?
-- Sources erin zetten
-- Responsiveness alles
+- Responsiveness favs
+- Vakjes anders op desktop
 - Animatie header (+ geluid?)
 - Animaties main
 
 To do algemeen:
 - UI stack? -> HELP?
-- Tekst schrijven voor team readme
 - Foto's schetsen toevoegen
 - Breakdown schets iPad
 - Documentatie
-
-
-Bronnen:
-- https://www.peakpx.com/en/hd-wallpaper-desktop-fjegq
-- https://modernfontstacks.com/
