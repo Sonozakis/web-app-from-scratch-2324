@@ -3,31 +3,36 @@
         {
             "name" : "Neon Genesis Evangelion",
             "year" : 1996,
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Neon Genesis Evangelion is a groundbreaking Japanese anime series created by Hideaki Anno. Set in a post-apocalyptic world, it follows the story of a teenage boy named Shinji Ikari who is recruited by a secretive organization called NERV to pilot giant bio-mechanical robots known as Evangelions to combat monstrous beings called Angels."
         },
 
         {
             "name" : "Higurashi no Naku Koro ni",
             "year" : 2006,
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Higurashi no Naku Koro ni, also known as When They Cry, is a Japanese visual novel, manga, and anime series created by Ryukishi07. The story is set in the rural village of Hinamizawa, where a series of gruesome murders and disappearances occur every year during the annual Watanagashi Festival."
         },
 
         {
             "name" : "Zankyou no Terror",
             "year" : 2014,
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information": "Zankyou no Terror, also known as Terror in Resonance, is a Japanese anime series directed by Shinichirō Watanabe. The story follows two teenage boys, Nine and Twelve, who carry out terrorist attacks in Tokyo using elaborate methods and riddles as clues."
         },
 
         {
             "name" : "Monogatari",
             "year" : 2019,
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Monogatari, often referred to as the Monogatari Series, is a Japanese light novel, anime, and manga franchise created by Nisio Isin. It centers around Koyomi Araragi, a high school student who becomes entangled in the supernatural world after encountering various oddities and apparitions."
         },
 
         {
             "name" : "Chainsaw Man",
             "year" : 2022,
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" :  "Chainsaw Man is a Japanese manga and anime series created by Tatsuki Fujimoto. It follows Denji, a young man who works as a devil hunter to pay off his deceased father's debt. Denji merges with his pet devil, Pochita, transforming into a Chainsaw Man with the ability to summon chainsaws from his body."
         }
     ],
 
@@ -35,58 +40,68 @@
         {
             "name" : "Drakengard",
             "year" : "2003",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Drakengard is a video game developed by Cavia. Set in dark fantasy worlds, the series features a mix of action, role-playing, and hack-and-slash gameplay. Drakengard follows the story of Caim, a prince who forms a pact with a dragon to seek revenge against the Empire responsible for his family's demise."
         },
 
         {
             "name" : "Persona 3",
             "year" : "2006",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Persona 3 is a Japanese role-playing game developed by Atlus. The game follows the protagonist, a high school student who transfers to Gekkoukan High School in Iwatodai City. The protagonist discovers the ability to summon a Persona, a manifestation of their inner self, and joins a group known as SEES (Specialized Extracurricular Execution Squad)."
         },
 
         {
             "name" : "Dragon Age: Origins",
             "year" : "2009",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Dragon Age: Origins is a critically acclaimed role-playing game developed by BioWare. Set in the fictional world of Thedas, the game puts players in the role of a Grey Warden, a legendary order tasked with protecting the realm from the monstrous Blight, led by the archdemon."
         },
 
         {
             "name" : "NieR: Automata",
             "year" : "2017",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "NieR: Automata is an action role-playing game developed by PlatinumGames and published by Square Enix. Set in a post-apocalyptic world where humanity has fled to the moon following an invasion of alien machines, players control 2B an android warrior created by humans to reclaim Earth from the machines."
         },
 
         {
             "name" : "Red Dead Redemption 2",
             "year" : "2018",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Red Dead Redemption 2 is an open-world action-adventure game developed and published by Rockstar Games. Set in 1899, the game serves as a prequel to the original Red Dead Redemption and follows the story of Arthur Morgan, a member of the Dutch van der Linde gang."
         }
     ],
 
 "music" : [
         {
             "name" : "Lana del Rey",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Lana Del Rey, born Elizabeth Woolridge Grant, is an American singer-songwriter known for her unique blend of dreamy pop, indie, and cinematic influences. Her music often explores themes of love, melancholy, glamour, and Americana nostalgia."
         },
 
         {
             "name" : "Tyler, the Creator",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Tyler, the Creator, born Tyler Gregory Okonma, is an American rapper, singer, songwriter, record producer, and fashion designer. Emerging as a founding member of the hip-hop collective Odd Future, Tyler gained recognition for his distinctive style, provocative lyrics, and genre-defying music."
         },
 
         {
             "name" : "Arctic Monkeys",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Arctic Monkeys is a British rock band formed in Sheffield, England, in 2002. The band consists of lead vocalist and guitarist Alex Turner, guitarist Jamie Cook, bassist Nick O'Malley, and drummer Matt Helders. Known for their distinctive sound blending indie rock with elements of garage rock, post-punk, and psychedelic rock."
         },
 
         {
             "name" : "Kali Uchis",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Kali Uchis, born Karly-Marina Loaiza, is a Colombian-American singer, songwriter, and producer known for her eclectic musical style blending elements of R&B, soul, pop, and Latin music."
         },
 
         {
             "name" : "Cobrah",
-            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+            "image" : "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+            "information" : "Cobrah is a Swedish singer, songwriter, and producer known for her energetic electro-pop sound and bold, provocative visuals."
         }
     ]
 }

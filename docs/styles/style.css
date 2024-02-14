@@ -98,6 +98,10 @@ h2 {
   padding: 0.5em 0 0.5em 0.5em;
 }
 
+h3 {
+  text-align: center;
+}
+
 a {
   overflow: hidden;
   position: relative;
@@ -226,14 +230,14 @@ main article {
   z-index: 2;
 }
 
-main article div {
+main > article div {
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
   flex: 2;
 }
 
-main article img {
+main > article img {
   flex: 1; 
   max-width: 90%; 
   height: 90%; 
@@ -244,36 +248,63 @@ main article img {
 /*************/
 /* FAVORITES */
 /*************/
-main div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-main div article {
-  display: flex;
-  flex-direction: column;
-  height: 15em;
-  width: 23em;
-}
-
-main div article {
+main > div article {
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-10em, -10em);
+  width: 50vh;
+  height: auto;
+  pointer-events: all;
 }
 
-main div article:nth-of-type(1) {
-  transform: translate(1em, -13em);
+main > div article:nth-of-type(1) {
+  transform: translate(-10em, 8em);
 }
 
-main div article:nth-of-type(2) {
-  transform: translate(0em, 3em);
+main > div article:nth-of-type(2),  main > div article:nth-of-type(3){
+  opacity: 0;
 }
 
-main div article:nth-of-type(3) {
-  transform: translate(-1em, 20em);
+/* Image and text */
+main > div article div {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0.5em 0.2em 0.5em;
 }
+
+main > div article div img {
+  width: 30%;
+  flex: 1;
+}
+
+/* Text */
+main > div article div section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  flex: 1;
+}
+
+/* Year */
+main > div article div section p:nth-of-type(1) {
+  text-align: center;
+}
+
+/* Button location */
+main > div article div:nth-of-type(2) {
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0;
+}
+
+/* Button reset */
+main > div article div button {
+  top: 0;
+  right: 0;
+  position:relative; 
+}
+
 
 
 /***********/

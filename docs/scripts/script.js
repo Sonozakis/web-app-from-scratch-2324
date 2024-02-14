@@ -1,28 +1,3 @@
-// const nameFile = document.querySelector("");
-// const jsonFile = "https://sonozakis.github.io/web-app-from-scratch-2324/docs/scripts/info.json";
-
-//   fetch(jsonFile) 
-//     .then((response) => {
-//       // Check if the response is ok
-//       if(!response.ok) {
-//         // If not show error
-//         throw new Error('Network response was not ok')
-//     }
-//     // If it's ok return result from JSON file
-//     return response.json();
-//     })
-//     .then((data) => {
-//       // Update the <p> in the HTML and show the JSON in the console
-//       nameFile.innerHTML = data.name;
-//       console.log(data);
-//     })
-
-//     .catch((error) => {
-//       // If there is an error during fetching show error
-//       console.error("There is a problem fetching the JSON file", error);
-//   });
-
-
 const showAbout = document.querySelector('header section ul li:nth-of-type(1) a');
 const about = document.querySelector('main article:nth-of-type(1)');
 const showFavs = document.querySelector('header section ul li:nth-of-type(2) a');
@@ -63,22 +38,25 @@ document.addEventListener('click', function(event) {
 // Load data from favorites.json and populate HTML elements
 function loadData() {
   // Fetch the JSON data from favorites.json
-  fetch('favorites.json')
+  fetch('https://sonozakis.github.io/web-app-from-scratch-2324/scripts/favorites.json')
       .then(response => response.json())
       .then(data => {
           // Populate HTML elements with anime data
-          document.querySelector('div article:nth-of-type(1) img').src = data.anime[0].image;
-          document.querySelector('div article:nth-of-type(1) h3').textContent = data.anime[0].name;
-          document.querySelector('div article:nth-of-type(1) p').textContent = `Year: ${data.anime[0].year}`;
+          document.querySelector('main div article:nth-of-type(1) div img').src = data.anime[0].image;
+          document.querySelector('main div article:nth-of-type(1) div section h3').textContent = data.anime[0].name;
+          document.querySelector('main div article:nth-of-type(1) div section p:nth-of-type(1)').textContent = `${data.anime[0].year}`;
+          document.querySelector('main div article:nth-of-type(1) div section p:nth-of-type(2)').textContent = `${data.anime[0].information}`;
 
           // Populate HTML elements with game data
-          document.querySelector('div article:nth-of-type(2) img').src = data.games[0].image;
-          document.querySelector('div article:nth-of-type(2) h3').textContent = data.games[0].name;
-          document.querySelector('div article:nth-of-type(2) p').textContent = `Year: ${data.games[0].year}`;
+          document.querySelector('main div article:nth-of-type(2) div img').src = data.games[0].image;
+          document.querySelector('main div article:nth-of-type(2) div section h3').textContent = data.games[0].name;
+          document.querySelector('main div article:nth-of-type(2) div section p:nth-of-type(1)').textContent = `${data.games[0].year}`;
+          document.querySelector('main div article:nth-of-type(2) div section p:nth-of-type(2)').textContent = `${data.games[0].information}`;
 
           // Populate HTML elements with music data
-          document.querySelector('div article:nth-of-type(3) img').src = data.music[0].image;
-          document.querySelector('div article:nth-of-type(3) h3').textContent = data.music[0].name;
+          document.querySelector('main div article:nth-of-type(3) div img').src = data.music[0].image;
+          document.querySelector('main div article:nth-of-type(3) div section h3').textContent = data.music[0].name;
+          document.querySelector('main div article:nth-of-type(3) div section p').textContent = `${data.music[0].information}`;
       })
       .catch(error => {
           console.error('Error loading favorites:', error);
