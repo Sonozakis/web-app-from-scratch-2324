@@ -254,7 +254,7 @@ main > div article {
   flex-direction: column;
   transform: translate(-10em, -10em);
   width: 90vw;
-  height: auto;
+  height: 35vh;
   pointer-events: all;
 }
 
@@ -282,35 +282,39 @@ main > div article div {
   display: flex;
   flex-direction: row;
   padding: 0 0.5em 0.2em 0.5em;
-
+  overflow-y: scroll;
 }
 
 main > div article div img {
-  max-width: 35%;
-  flex: 1;
+  max-width: 40%; /* Set maximum width for the image */
+  flex: 0 0 auto; /* Allow image to grow or shrink, but not stretch */
+  object-fit: contain; /* Maintain aspect ratio without stretching */
+  align-self: flex-start;
 }
 
+/* Text */
 /* Text */
 main > div article div section {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
   flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 0.5em; /* Add padding to create space for scrollbar */
 }
+
 
 /* Year */
 main > div article div section p:nth-of-type(1) {
   text-align: center;
-}
-main > div article div section p:nth-of-type(2) {
-overflow-y: scroll;
+  overflow: hidden;
 }
 
 /* Button location */
 main > div article div:nth-of-type(2) {
   align-items: center;
   justify-content: center;
-  padding: 0.5em 0;
+  padding: 0.5em 0 1em 0;
 }
 
 /* Button reset */
@@ -320,6 +324,9 @@ main > div article div button {
   position:relative; 
 }
 
+main > div article:nth-of-type(3) div section p:nth-of-type(1) {
+  overflow: auto;
+}
 
 
 /***********/

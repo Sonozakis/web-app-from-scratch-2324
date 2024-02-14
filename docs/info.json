@@ -6,13 +6,14 @@
     "study": "CMD",
     "city": "Den Bosch",
     "hobbies": ["Gaming, reading, listening to music, watching anime"],
+    "superheroes" : ["Sailor Jupiter","Kazama Kiryu", "Luigi", "Miles Morales", "Shrek"],
+    "supervillains": ["Sephiroth", "Makima", "Nyx Avatar", "Takano Miyo", "Light Yagami"],
+    "favouriteMovies": ["The End of Evangelion", "Kill Bill", "He Loves Me, He Loves Me Not", "American Psycho", "Coraline"],
     "gamen": "true",
-    "favourite-films": ["The End of Evangelion", "Kill Bill", "He Loves Me, He Loves Me Not", "American Psycho", "Coraline"],
     "avatar": {
       "url": "https://sonozakis.github.io/web-app-from-scratch-2324/images/sailorjupiter.jpg",
       "alternativeText": "Sailor Jupiter"
     },
-
 
     "firstName": "Klaudia",
     "lastName": "Dobrzelewska",
