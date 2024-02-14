@@ -99,7 +99,7 @@ h2 {
 }
 
 h3 {
-  text-align: center;
+  padding-left: 0.9em;
 }
 
 a {
@@ -230,6 +230,11 @@ main article {
   z-index: 2;
 }
 
+/* Puts hovered article on front */
+main article:hover {
+  z-index: 99;
+}
+
 main > article div {
   display: flex;
   flex-direction: column;
@@ -245,76 +250,75 @@ main > article img {
 }
 
 
+
 /*************/
 /* FAVORITES */
 /*************/
-main > div article {
-  opacity: 1;
-  display: flex;
-  flex-direction: column;
-  transform: translate(-10em, -10em);
-  width: 90vw;
+main div article {
   height: 35vh;
-  pointer-events: all;
-}
-
-/* Anime */
-main > div article:nth-of-type(1) {
-  transform: translate(-12em, -17.5em);
-}
-
-/* Games */
-main > div article:nth-of-type(2){
-  transform: translate(-13.5em, 1.4em);
-}
-
-/* Music */
-main > div article:nth-of-type(3) {
-  transform: translate(-11em, 20em);
-}
-
-main > div article:nth-of-type(3) section p {
-  text-align: left !important;
-}
-
-/* Image and text */
-main > div article div {
-  display: flex;
-  flex-direction: row;
-  padding: 0 0.5em 0.2em 0.5em;
-  overflow-y: scroll;
-}
-
-main > div article div img {
-  max-width: 40%; /* Set maximum width for the image */
-  flex: 0 0 auto; /* Allow image to grow or shrink, but not stretch */
-  object-fit: contain; /* Maintain aspect ratio without stretching */
-  align-self: flex-start;
-}
-
-/* Text */
-/* Text */
-main > div article div section {
+  width: 80vw;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  flex: 1;
-  overflow-y: auto; /* Enable vertical scrolling */
-  padding-right: 0.5em; /* Add padding to create space for scrollbar */
 }
 
+/* Anime */
+main div article:nth-of-type(1) {
+  top: -2vh;
+  left: 2vw;
+}
 
-/* Year */
-main > div article div section p:nth-of-type(1) {
-  text-align: center;
-  overflow: hidden;
+/* Games */
+main div article:nth-of-type(2) {
+  top: 32vh;
+  right: 2vw;
+}
+
+/* Music */
+main div article:nth-of-type(3) {
+  top: 67vh;
+  left: 0vw;
+}
+
+main div article div {
+  overflow-y: hidden;
+}
+
+/* Image and text */
+main div article > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  flex: 6;
+}
+
+/* Text */
+main div article div section {
+  overflow-y: auto;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+main div article img {
+  width: 10%; 
+  flex: 0 0 auto; 
+  object-fit:fill;
+  align-self: center;
+  padding-left: 0.2em;
+  flex: 3;
 }
 
 /* Button location */
 main > div article div:nth-of-type(2) {
   align-items: center;
   justify-content: center;
-  padding: 0.5em 0 1em 0;
+  align-items: center;
+  flex: 1;
+  padding: 0.2em 0 0.5em 0;
+  display: flex;
 }
 
 /* Button reset */
@@ -324,31 +328,15 @@ main > div article div button {
   position:relative; 
 }
 
-main > div article:nth-of-type(3) div section p:nth-of-type(1) {
-  overflow: auto;
+/* Adds scroll to music text */
+main div article div section p:nth-of-type(2) {
+  overflow-y: scroll;
 }
 
-
-/***********/
-/* SOURCES */
-/***********/
-main > article:nth-of-type(3) {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2em;
-  height: auto;
-  width: 20em;
-  padding-bottom: 1em;
-}
-
-main article:nth-of-type(3) ul {
-  padding-left: 2em;
-}
-
-main article:nth-of-type(3) ul li a {
-  text-transform: none;
-  font-size: 1em;
-  display: inline-flex;
+/* Removes overflow from year */
+main div article:nth-of-type(1) div section p:nth-of-type(1), 
+main div article:nth-of-type(2) div section p:nth-of-type(1) {
+  overflow: hidden;
 }
 
 
@@ -362,12 +350,48 @@ main article:nth-of-type(3) ul li a {
   pointer-events: all;
 }
 
+/* Class for shaking animation */
+.shake {
+  animation: shakeAnimation 0.5s ease-in-out;
+}
+
+/* Class for opening animation */
+.window {
+  animation: windowOpen 0.5s cubic-bezier(.98,.02,.66,1.1);
+  transform: translateY(100%);
+}
+
 
 
 /**************/
 /* ANIMATIONS */
 /**************/
+@keyframes shakeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1em);
+  }
+  50% {
+    transform: translateX(1em);
+  }
+  75% {
+    transform: translateX(-1em);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
+@keyframes windowOpen {
+  0% {
+    transform: scaleY(0) translateY(100%);
+  }
+  100% {
+    transform: scaleY(1) translateY(0%);
+  }
+}
 
 
 
@@ -388,7 +412,7 @@ main article:nth-of-type(3) ul li a {
     font-size: 1.2em;
   }
 
-  main article {
+  main article, main div article  {
     height: 35vh;
     width: 90vw;
   }
@@ -400,8 +424,18 @@ main article:nth-of-type(3) ul li a {
   }
 
   main article {
+    height: 25em;
+    width: 30em;
+  }
+
+    main div article {
     height: 18em;
     width: 30em;
+  }
+
+  main div article img {
+    flex: 1;
+    padding-left: 1em;
   }
 
   button {
@@ -416,14 +450,23 @@ main article:nth-of-type(3) ul li a {
   }
 
   header section {
-    transform: translateY(2em);
+    top: 2em;
   }
 
   main article {
-    transform: translateY(2em);
+    top: 12em;
   }
 
   button {
     right: 0.1em;
   }
+
+  main div article:nth-of-type(1) {
+    left: 10vw;
+  }
+  
+  main div article:nth-of-type(3) {
+    top: 55vh;
+  }
 }
+

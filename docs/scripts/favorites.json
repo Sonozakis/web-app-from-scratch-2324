@@ -39,35 +39,35 @@
     "games" : [
         {
             "name" : "Drakengard",
-            "year" : "2003",
+            "year" : 2003,
             "image" : "https://e.snmc.io/lk/l/x/8efa2ae3eb2542c053ace125ce939c3c/10667276",
             "information" : "Drakengard is a video game developed by Cavia. Set in dark fantasy worlds, the series features a mix of action, role-playing, and hack-and-slash gameplay. Drakengard follows the story of Caim, a prince who forms a pact with a dragon to seek revenge against the Empire responsible for his family's demise."
         },
 
         {
             "name" : "Persona 3",
-            "year" : "2006",
+            "year" : 2006,
             "image" : "https://www.rpgfan.com/wp-content/uploads/2020/10/Shin-Megami-Tensei-Persona-3-Artwork-023-scaled.jpg",
             "information" : "Persona 3 is a Japanese role-playing game developed by Atlus. The game follows the protagonist, a high school student who transfers to Gekkoukan High School in Iwatodai City. The protagonist discovers the ability to summon a Persona, a manifestation of their inner self, and joins a group known as SEES (Specialized Extracurricular Execution Squad)."
         },
 
         {
             "name" : "Dragon Age: Origins",
-            "year" : "2009",
+            "year" : 2009,
             "image" : "https://upload.wikimedia.org/wikipedia/en/8/89/Dragon_Age_Origins_cover.png",
             "information" : "Dragon Age: Origins is a critically acclaimed role-playing game developed by BioWare. Set in the fictional world of Thedas, the game puts players in the role of a Grey Warden, a legendary order tasked with protecting the realm from the monstrous Blight, led by the archdemon."
         },
 
         {
             "name" : "NieR: Automata",
-            "year" : "2017",
+            "year" : 2017,
             "image" : "https://m.media-amazon.com/images/I/61hp8zM2D4L._AC_UF894,1000_QL80_.jpg",
             "information" : "NieR: Automata is an action role-playing game developed by PlatinumGames and published by Square Enix. Set in a post-apocalyptic world where humanity has fled to the moon following an invasion of alien machines, players control 2B an android warrior created by humans to reclaim Earth from the machines."
         },
 
         {
             "name" : "Red Dead Redemption 2",
-            "year" : "2018",
+            "year" : 2018,
             "image" : "https://assets.vg247.com/current//2018/05/red_dead_redemption_2_cover_art_1.jpg",
             "information" : "Red Dead Redemption 2 is an open-world action-adventure game developed and published by Rockstar Games. Set in 1899, the game serves as a prequel to the original Red Dead Redemption and follows the story of Arthur Morgan, a member of the Dutch van der Linde gang."
         }
