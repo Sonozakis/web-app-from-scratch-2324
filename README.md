@@ -1,7 +1,7 @@
 # Web App From Scratch @cmda-minor-web 2023 - 2024
 
 ## Documentatie
-thema, idee, code
+**thema, idee, code, breakdown schets**
 
 
 ## Proces
@@ -16,7 +16,7 @@ Dag 2 heb ik vooral verder besteed aan het ontwerpen van mijn concept. Mijn eers
 <img src="./readme-images/design1.png" alt="Mijn eerste design.">
 <img src="./readme-images/design2.png" alt="Mijn tweede design.">
 
-FOTO'S SCHETSEN TOEVOEGEN!!!!!!
+**FOTO'S SCHETSEN TOEVOEGEN!!!!!!**
 
 
 ### Dag 3 - 8 februari 2024
@@ -57,25 +57,39 @@ Als laatste heb ik ook mijn JSON geupdated met de informatie die de docenten nod
 <img src="./readme-images/JSON-update1.png" alt="Toegevoegde informatie binnen de JSON.">
 
 ### Dag 6 - 13 februari 2024
-op school:
-- scrollbar
-- sources erin
-- responsiveness sources en about
+Ik voelde mij niet zo lekker vandaag, dus heb ik op school best weinig gedaan. Als eerste heb ik de scrollbar aangepast, omdat de standaard scrollbar er niet mooi uitzag binnen mijn layout. 
+**FOTO TOEVOEGEN**
 
-thuis:
-- de rest
+Het volgende wat ik heb gedaan is wat informatie plaatsen binnen de sources pagina, zodat ik een basis heb. Hier komen later nog meer sources bij.
 
+Ook heb ik mijn responsiveness bij de sub gedeeltes van mijn app bijgewerkt, zodat deze mooi ogen op kleine, middel en grote schermen. Daarnaast heb ik de vakjes meer verspreid, zodat ze een beetje een pop-up gevoel hebben van een Windows window.
+
+Na een dutje te nemen thuis ben ik hard aan de slag gegaan met mijn website afmaken. Als eerste heb ik vooral gevochten met mijn gekozen API. In principe is het fetchen goed gegaan, maar ik liep snel tegen andere problemen aan. Als eerste kreeg ik een error, omdat ik geen key had. Ik heb hiervoor een account aangemaakt, maar ik heb eerlijk gezegd nooit met een API gewerkt die een key nodig had. Toen ik deze eindelijk had ontvangen, kreeg ik een error dat ik niet genoeg authority had om de data op te roepen. 
+
+<img src="./readme-images/apiflop.png" alt="L">
+
+Omdat ik hier een beetje gek van werd en ik niet goed wist hoe ik dit in godsnaam moest oplossen, heb ik besloten om dit te laten gaan en gewoon een eigen JSON file op te roepen met afbeeldingen en titels van al mijn favorieten. Dit is uiteindelijk heel soepel gegaan door middel van de uitleg die wij vorige week kregen van Marten over JSON en deze files fetchen. 
+
+**FOTO TOEVOEGEN**
+
+Hierna heb ik alle favorieten in 3 verschillende carrousels gestopt. Ook heb ik nog even de responsiveness van de vakjes netjes gemaakt.
+
+**FOTO TOEVOEGEN**
+
+Als laatste heb ik animaties gemaakt voor het open- en dichtmaken van de subpagina's. Ook heb ik een kleine animatie toegevoegd aan het menu en daar een geluidje aan toegevoegd.
+
+**FOTO TOEVOEGEN**
 
 - Favs erin zetten
     - Api connecten
     - Carrousel per genre?
 - Responsiveness favs
-- Vakjes anders op desktop
+- Vakjes anders
 - Animatie header (+ geluid?)
 - Animaties main
 
-To do algemeen:
-- UI stack? -> HELP?
-- Foto's schetsen toevoegen
+### Dag 7 - 14 februari 2024
+- Foto's schetsen toevoegen -> puntjes op de i van de readme
 - Breakdown schets iPad
 - Documentatie
+

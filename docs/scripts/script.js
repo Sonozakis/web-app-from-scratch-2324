@@ -60,6 +60,30 @@ document.addEventListener('click', function(event) {
   }
 });
 
+// Load data from favorites.json and populate HTML elements
+function loadData() {
+  // Fetch the JSON data from favorites.json
+  fetch('favorites.json')
+      .then(response => response.json())
+      .then(data => {
+          // Populate HTML elements with anime data
+          document.querySelector('div article:nth-of-type(1) img').src = data.anime[0].image;
+          document.querySelector('div article:nth-of-type(1) h3').textContent = data.anime[0].name;
+          document.querySelector('div article:nth-of-type(1) p').textContent = `Year: ${data.anime[0].year}`;
 
+          // Populate HTML elements with game data
+          document.querySelector('div article:nth-of-type(2) img').src = data.games[0].image;
+          document.querySelector('div article:nth-of-type(2) h3').textContent = data.games[0].name;
+          document.querySelector('div article:nth-of-type(2) p').textContent = `Year: ${data.games[0].year}`;
 
+          // Populate HTML elements with music data
+          document.querySelector('div article:nth-of-type(3) img').src = data.music[0].image;
+          document.querySelector('div article:nth-of-type(3) h3').textContent = data.music[0].name;
+      })
+      .catch(error => {
+          console.error('Error loading favorites:', error);
+      });
+}
 
+// Call the function to load data when the window finishes loading
+window.addEventListener('load', loadData);
