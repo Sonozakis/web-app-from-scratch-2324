@@ -34,11 +34,11 @@ img {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-  --main: #e5e5e5;
-  --accent: #283ba8; 
+  --mainColor: hsl(0, 0%, 90%);
+  --accentColor: hsl(231, 62%, 41%); 
 
-  --title-font: 'neue', Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
-  --text-font: 'arial', Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif; 
+  --titleFont: 'neue', 'arial', sans-serif;
+  --textFont: 'arial',sans-serif; 
 }
 
 
@@ -47,21 +47,21 @@ img {
 /* GENERAL */
 /***********/
 body {
-  background-color: var(--main);
-  width: 100vw;
+  background-color: var(--mainColor);
+  width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--accent);
-  font-family: var(--text-font);
+  color: var(--accentColor);
+  font-family: var(--textFont);
   position: relative;
 }
 
 button {
-  color: var(--main);
-  background-color: var(--accent);
-  border: 0.01em var(--main) solid;
+  color: var(--mainColor);
+  background-color: var(--accentColor);
+  border: 0.01em var(--mainColor) solid;
   top: -1.85em;
   right: 0.5vw;
   font-size: 1em;
@@ -72,9 +72,9 @@ button {
 }
 
 button:hover, button:active  {
-  color: var(--accent);
-  background-color: var(--main);
-  border: 0.01em var(--accent) solid;
+  color: var(--accentColor);
+  background-color: var(--mainColor);
+  border: 0.01em var(--accentColor) solid;
   transition: 0.3s;
 }
 
@@ -84,17 +84,18 @@ button:active {
 
 h1 {
   position: relative;
-  font-family: var(--title-font);
+  font-family: var(--titleFont);
   text-transform: uppercase;
   text-align: center;
-  font-size: 6.5vw;
+
+  font-size: clamp(1em, 6.5vw, 2em);
   margin: 0 0.25em
 }
 
 h2 {
-  font-family: var(--title-font);
+  font-family: var(--titleFont);
   text-transform: uppercase;
-  font-size: 5vw;
+  font-size: clamp(0.8em, 5vw, 1.5em);
   padding: 0.5em 0 0.5em 0.5em;
 }
 
@@ -107,9 +108,9 @@ a {
   position: relative;
   display: block;
   cursor: pointer;
-  color: var(--accent);
+  color: var(--accentColor);
   text-decoration: none;
-  font-size: 4vw;
+  font-size: clamp(0.6em, 4vw, 1.2em);
   text-transform: lowercase;
 }
 
@@ -119,7 +120,7 @@ a::after {
   position: absolute;
   width: 100%;
   height: 0.05em;
-  background-color: var(--accent);
+  background-color: var(--accentColor);
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
   bottom: 0;
@@ -140,7 +141,7 @@ p {
   overflow-y: auto;
   padding: 0 1em 1em 1em;
   scrollbar-width: thin;
-  scrollbar-color: var(--accent) var(--main);
+  scrollbar-color: var(--accentColor) var(--mainColor);
 }
 
 p br {
@@ -164,7 +165,7 @@ p a {
 header {
   display: flex;
   flex-direction: column;
-  background-color: var(--main);
+  background-color: var(--mainColor);
   background-image: url("../images/rei2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,9 +181,9 @@ header section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 0.01em var(--accent) solid;
-  background-color: var(--main);
-  border-top: 2em var(--accent) solid;
+  border: 0.01em var(--accentColor) solid;
+  background-color: var(--mainColor);
+  border-top: 2em var(--accentColor) solid;
   padding: 1em 0em;
   margin: 0em 2em;
   z-index: 1;
@@ -218,9 +219,9 @@ main article {
   display: flex;
   flex-direction: row;
   gap: 0.2em;
-  border: 0.01em var(--accent) solid;
-  background-color: var(--main);
-  border-top: 2em var(--accent) solid;
+  border: 0.01em var(--accentColor) solid;
+  background-color: var(--mainColor);
+  border-top: 2em var(--accentColor) solid;
   margin: 0em 1em;
   height: 40vh;
   position: absolute;
@@ -400,18 +401,6 @@ main div article:nth-of-type(2) div section p:nth-of-type(1) {
 /******************/
 /* Middle screens */
 @media (min-width: 33em) {
-  h1 {
-    font-size: 2em;
-  }
-  
-  h2 {
-    font-size: 1.5em;
-  }
-
-  a {
-    font-size: 1.2em;
-  }
-
   main article, main div article  {
     height: 35vh;
     width: 90vw;
@@ -469,4 +458,3 @@ main div article:nth-of-type(2) div section p:nth-of-type(1) {
     top: 55vh;
   }
 }
-
